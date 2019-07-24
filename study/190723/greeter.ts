@@ -1,6 +1,7 @@
-interface Point {
-    readonly x: number;
-    readonly y: number;
+interface CreatePerson {
+    (name: string, age: number) : object;
 }
-let p1: Point = { x: 20, y: 30};
-p1.x = 5;
+let p1: CreatePerson;
+p1 = function(n: string, a: number) {
+    return {"name": n, "age": a};
+}

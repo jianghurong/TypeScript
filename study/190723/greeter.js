@@ -1,2 +1,4 @@
-var p1 = { x: 20, y: 30 };
-p1.x = 5;
+var p1;
+p1 = function (n, a) {
+    return { "name": n, "age": a };
+};
